@@ -1,0 +1,21 @@
+<h1> Hello world!</h1>
+
+<p> First webpage </p>
+
+<h3>Favorite Pizza: </h3>
+{% for topping in favorite_pizza %}
+	{% if topping == salami %}
+		{{ "Salami is the best" }}<br/>
+	{% else %}
+
+		{{ topping }}<br/>
+	{% endif %}
+	
+
+{% endfor %}
+
+
+<br/><br/>
+<h3> Best pizza </h3>
+
+{{ favorite_pizza.1 }}
