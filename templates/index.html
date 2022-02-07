@@ -1,6 +1,9 @@
 <h1> Hello world!</h1>
 
 <p> First webpage </p>
+{% extends 'base.html'%}
+
+{% block content %}
 
 <h3>Favorite Pizza: </h3>
 {% for topping in favorite_pizza %}
@@ -19,3 +22,5 @@
 <h3> Best pizza </h3>
 
 {{ favorite_pizza.1 }}
+
+{% endblock %}
